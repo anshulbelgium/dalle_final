@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.Home{
+   display: flex;
+   flex-direction: column;
+}
+
+.ImagePage_text{
+  display: flex;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.ImagePage button {
+  padding: 0.9rem;
+}
+
+ input{
+  width: 70%;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.imageData{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

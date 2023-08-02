@@ -1,0 +1,572 @@
+body {
+    background-color: #FAFAFC;
+}
+
+.logo-wrapper {
+    text-align: center;
+}
+
+.logo-wrapper img {
+    width: calc(18vw + 150px);
+}
+
+.logo-wrapper p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 0;
+}
+
+.home-wrapper {
+    padding: 10rem 0;
+}
+
+.imageGenerator_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.imageGenerator_input svg {
+    font-size: 34px;
+    stroke: #E3E3E3;
+    margin-left: 5px;
+}
+
+.imageGenerator_input > span {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px #ECECF1;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #FFF;
+    width: 100%;
+}
+
+.imageGenerator_input input {
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+}
+
+.imageGenerator_input input::placeholder {
+    color: #E3E3E3;
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;  
+    color: #000;
+    background: #ECECF1 !important;
+    display: inline-block;
+    border: none;
+    border-radius: 100px;
+    height: 50px;
+    min-width: 150px;
+    cursor: pointer;
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+
+.upload-btn {
+    position: relative;
+}
+
+.upload-btn:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    border: 2px dashed #ECECF1;
+    border-radius: 100px;
+}
+
+.ImagePage_text {
+    margin: 25px 0;
+}
+
+.ImagePage_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.ImagePage_text button {
+    font-size: 14px;
+    height: auto;
+    min-width: auto;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.imageData {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 0 0 5rem;
+    margin: 0;
+}
+
+.imageData li {
+    border-radius: 15px;
+    transition: 0.3s all ease 0s;
+    position: relative;
+}
+
+.imageData li a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageData li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: transparent;
+    transition: 0.8s all ease 0s;
+    z-index: 1;
+}
+
+.imageData li p {
+    z-index: 99;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    margin: 0;
+    color: #FFF;
+    font-size: 14px;
+    padding: 10px 15px;
+    white-space: normal;
+    word-break: keep-all;
+}
+
+.imageData li a:hover:before {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.imageData img {
+    max-width: 100%;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+.imageData li:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(149, 157, 165, 0.301) 0px 8px 24px;
+}
+
+.detail-wrapper {
+    background-color: #FAFAFC;
+    padding: 3rem 0;
+}
+
+.detail-wrapper .main-img {
+    height: calc(100vh - 120px);
+    object-fit: contain;
+}
+
+.detail-wrapper .content .detail {
+    column-gap: 35px;
+}
+
+.detail-wrapper .content .detail .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.detail-wrapper .content .detail .item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 60%;
+    background-color: #7B7B7B;
+}
+
+.detail-wrapper .content .detail .item:last-child::before {
+    display: none;
+}
+
+.detail-wrapper .content .detail .item img {
+    margin-right: 10px;
+}
+
+.detail-wrapper .content .detail .item p {
+    margin: 0;
+    color: #7B7B7B;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.detail-wrapper .content h1 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.detail-wrapper .btn-group button:first-child {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 218px;
+    height: 50px;
+    border-radius: 25px !important;
+    background: #000 !important; 
+}
+
+.detail-wrapper .btn-group button:last-child {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px !important;
+    background: #ECECF1 !important;
+}
+
+.detail-wrapper .content > p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.image-container {
+    background-color: #FFF;
+    border-radius: 15px;
+    height: calc(100vh - 120px);
+}
+
+.close-btn {
+    position: absolute;
+    top: 90px;
+    right: 30px;
+    min-width: auto !important;
+    height: auto !important;
+    background-color: transparent !important;
+    font-size: 30px;
+}
+
+.result-header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 65% 25%;
+}
+
+.result-searchbar .imageGenerator_input, .result-header .result-searchbar {
+    width: 100%;
+}
+
+.result-header > div {
+    width: 100%;
+}
+
+.result-header .NavBar {
+    justify-content: flex-end;
+}
+
+.result-header .imageGenerator_input > span {
+    box-shadow: 0px 0px 5px #ECECF1;
+    border: 0px solid #FFF;
+    padding: 2px;
+}
+
+.result-header .imageGenerator_input .btn {
+    font-size: 16px;
+}
+
+.footer li a {
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 30px;
+}
+
+.footer .social-media li a {
+    display: inline-block;
+    background-color: #000;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+    line-height: 28px;
+}
+
+.footer .social-media {
+    column-gap: 15px;
+}
+
+.footer .copyright {
+    color: rgba(0, 0, 0, 0.356);
+    text-align: center;
+    font-size: 12px;
+    font-family: Poppins;
+    line-height: 14px;
+    margin-top: 50px;
+}
+
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 35px 0 15px;
+    background-color: #fafafc;
+}
+
+.accordion {
+    counter-reset: myCounter;
+}
+
+.accordion .accordion-header button {
+    box-shadow: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0 !important;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+    align-items: baseline;
+}
+
+.accordion .accordion-header {
+    padding: 35px 25px;
+}
+
+.accordion .accordion-header button:before {
+    content: counter(myCounter)". ";
+    counter-increment: myCounter;
+    padding-right: 10px;
+}
+
+.accordion .accordion-item {
+    background-color: transparent;
+    border-radius: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.accordion .accordion-header button:not(.collapsed) {
+    padding-bottom: 5px;
+}
+
+
+.accordion .accordion-body {
+    padding: 0px 55px 35px;
+    color: #7B7B7B;
+    font-size: 18px;
+}
+
+.accordion .accordion-item:last-child {
+    border: none;
+}
+
+.showImage {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.showImage p {
+    color: #000;
+    margin: 10px 0 2px;
+}
+
+.showImage a {
+    text-decoration: none !important;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .result-header {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    .result-header .result-searchbar {
+        padding: 0 15px;
+    }
+
+    .detail-wrapper .main-img, .image-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .detail-wrapper .content .detail {
+        flex-wrap: wrap;
+    }
+
+    .footer li a {
+        padding: 5px 10px;
+    }
+
+    .footer .copyright {
+        margin-top: 40px;
+    }
+
+    .footer {
+        padding: 25px 0 15px;
+    }
+
+    .accordion .accordion-header button {
+        font-size: 1.1rem;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .btn-group .btn {
+        width: 90% !important;
+        min-width: 90% !important;
+        margin: 0 !important;
+    }
+
+    .accordion .accordion-header {
+        padding: 25px 25px;
+    }
+
+    .accordion .accordion-body {
+        padding: 0 50px 35px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .imageGenerator_input {
+        width: 100%;
+    }
+
+    .imageGenerator_input .btn {
+        font-size: 14px;
+        padding: 0;
+        height: 40px;
+        min-width: 110px;
+    }
+
+    .result-header .imageGenerator_input .btn {
+        height: 30px;
+        font-size: 13px;
+        min-width: 90px;
+    }
+
+    .imageGenerator_input input,
+    .result-header .imageGenerator_input input {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .btn-group .btn {
+        margin: 0 auto !important;
+    }
+
+    .close-btn {
+        top: 70px;
+        right: 15px;
+    }
+
+    .accordion .accordion-header {
+        padding: 25px 15px;
+    }
+
+    .accordion .accordion-header button {
+        line-height: 24px;
+    }
+
+    .accordion .accordion-body {
+        padding: 0px 0px 35px 40px;
+    }
+
+    .home-wrapper {
+        padding: 10rem 0 4rem;
+    }
+}
+
+.dots {
+    display: inline-block;
+    font-size: 1.4rem;
+}
+  
+.dots:after {
+    position: absolute;
+    margin-left: .1rem;
+    content: ' ...';
+    animation: loading steps(4) 3s infinite;
+    clip: rect(auto, 0px, auto, auto);
+}
+
+@keyframes loading {
+    to {
+      clip: rect(auto, 18px, auto, auto);
+    }
+}
+
+.imageGenerator_input .btn.loading {
+    padding-left: 0px;
+    overflow: hidden;
+    background-color: transparent !important;
+    z-index: 9;
+}
+
+.imageGenerator_input .btn.loading span {
+    font-size: 18px;
+}
+
+.imageGenerator_input .btn.loading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    background-color: #ECECF1;
+    animation: loadings 15s normal;
+}
+
+@keyframes loadings {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

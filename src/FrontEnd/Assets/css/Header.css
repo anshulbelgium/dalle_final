@@ -1,0 +1,47 @@
+.Header {
+    background-color: #FAFAFC !important;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.NavBar{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.Header > div {
+    width: 33.333%;
+}
+
+.NavBar li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.account-avatar {
+    text-align: right;
+}
+
+.account-avatar a {
+    display: inline-block;
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFF;
+}
