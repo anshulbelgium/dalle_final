@@ -25,10 +25,10 @@ const Footer = () => {
                 </Col>
                 <Col xl={3} lg={3}>
                     <ul className='social-media list-unstyled d-flex justify-content-lg-end justify-content-center m-0'>
-                        <li><a href="#" target='_blank'><FaFacebookF /></a></li>
+                        <li><a href="https://www.facebook.com/people/Dall-E-Free/100095360649990/" target='_blank'><FaFacebookF /></a></li>
                         <li><a href="#" target='_blank'><BsTwitter /></a></li>
                         <li><a href="#" target='_blank'><BsInstagram /></a></li>
-                        <li><a href="#" target='_blank'><FaPinterestP /></a></li>
+                        <li><a href="https://in.pinterest.com/dallefree0/" target='_blank'><FaPinterestP /></a></li>
                     </ul>
                 </Col>
             </Row>
